@@ -256,6 +256,12 @@
    margin-bottom: 50px;
    color: var(--main-text-color,black);
 }
+.section-subtitle {
+   line-height: 1.14;
+   text-transform: uppercase;
+   color: var(--main-text-color,black);
+   margin-bottom: 10px;
+}
 .section-advant {
    padding-top: 94px;
 }
@@ -278,13 +284,26 @@
 .doing-items {
    display: flex;
    gap: 30px;
+   /* position: relative; */
 }
 
-.section-subtitle {
+.doing-subtitle {
    line-height: 1.14;
    text-transform: uppercase;
-   color: var(--main-text-color,black);
-   margin-bottom: 10px;
+   color: var(--light-text-color,white);
+   background-color: rgba(47, 48, 58, 0.8);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 70px;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+
+}
+
+.doing-item {
+   position: relative;
 }
 
 .section-text {
