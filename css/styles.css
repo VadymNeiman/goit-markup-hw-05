@@ -499,6 +499,37 @@
    display: flex;
 }
 
+.filter-foto {
+position: relative;
+width: 370px;
+height: 294px;
+/* height: 295px; */
+overflow: hidden;
+}
+.filter-card:hover .filter-overlay,
+.filter-card:focus .filter-overlay  {
+   transform: translatey(0);
+}
+.filter-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   padding: 62px 24px;
+   background-color: var(--accent-color,blue);
+   transform: translatey(100%);
+   /* transform: translatey(101%); */
+   transition: transform 250ms ease-in-out;
+}
+
+.filter-overlay-description {
+   font-size: 18px;
+   line-height: 1.56;
+   letter-spacing: 0.03em;
+   text-align: left;
+   color: var(--light-text-color,white);
+}
 .filter-card {
    transition-property: box-shadow;
    transition-duration: 250ms;
